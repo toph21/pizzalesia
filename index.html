@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Rush - Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>🍕 Pizza Rush</h1>
+      <p class="subtitle">Prototype jouable (très simple)</p>
+
+      <section class="hud">
+        <div>Temps: <span id="time">30</span>s</div>
+        <div>Score: <span id="score">0</span></div>
+        <div>Commande: <span id="order">-</span></div>
+      </section>
+
+      <section class="ingredients">
+        <h2>Choisis les ingrédients</h2>
+        <div class="buttons">
+          <button data-ingredient="tomate">🍅 Tomate</button>
+          <button data-ingredient="mozza">🧀 Mozza</button>
+          <button data-ingredient="pepperoni">🥓 Pepperoni</button>
+          <button data-ingredient="champignon">🍄 Champignon</button>
+        </div>
+      </section>
+
+      <section class="actions">
+        <button id="validate">Servir la pizza</button>
+        <button id="restart" class="secondary">Recommencer</button>
+      </section>
+
+      <section>
+        <h3>Pizza en cours</h3>
+        <p id="currentPizza">Aucun ingrédient</p>
+        <p id="message"></p>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
